@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Calculator</name>
+    </assembly>
+    <members>
+        <member name="M:Calculator.Controllers.OperationsController.Get(Calculator.Controllers.Operation)">
+             <summary>
+             Make an operation with two ints
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Operation
+                 {
+                    "FirstNumer": 1,
+                    "SecondNumer": 1,
+                    "OperationType": 1 -> 0 Sum, 1, Sub, 2 Division, 3 Multiplication
+                    
+                 }
+            
+             </remarks>
+             <param name="operation"></param>  
+             <returns>The int result</returns>
+             <response code="200">Return int operation result</response>
+        </member>
+    </members>
+</doc>
